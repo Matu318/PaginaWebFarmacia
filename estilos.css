@@ -1,8 +1,8 @@
 header{
 
 	display: grid;
-	grid-template-columns: 200px 200px 200px;
-	grid-template-rows: 80px;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 100px;
 	grid-gap: 10px;
 
 
@@ -16,10 +16,10 @@ header{
 .logo {
 	grid-column: 1;
 	grid-row: 1;
-	height: 170px;
-	width: 150px;
+	height: 92px;
+    padding-left: 22px;
 } 
-.buscador {
+[name="buscador"] {
 	grid-column: 2;
 	grid-row: 1;
 
@@ -29,11 +29,33 @@ header{
 
 .lupa{
 
-	float: right;
 	grid-column: 2;
     grid-row: 1;
     height: 33px;
     width: 25px;
     padding: 13px;
+    justify-self: end;
 
 }
+
+.carrito{
+
+	justify-self: right;
+	grid-column: 3;
+	grid-row: 1;
+	width: 83px;
+	padding: 5px;
+
+}
+
+.numeroCompra{
+
+	    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+    padding-left: 244px;
+    font-size: 27px;
+
+
+}
+
