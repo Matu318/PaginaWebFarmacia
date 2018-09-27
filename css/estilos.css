@@ -1,0 +1,73 @@
+/*GENERAL*/
+body {
+	margin:0px;
+}
+
+/*ENCABEZADO - Header*/
+header {
+	display: grid;
+	grid-template-columns: calc(33.333333% - 6px) calc(33.333333% - 6px) calc(33.333333% - 6px);
+	grid-template-rows: 100px;
+	column-gap: 9px;
+	height: 92px;
+	position: fixed;
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #fff;
+	z-index: 9999;
+}
+.logo {
+	grid-column: 1;
+	grid-row: 1;
+    padding-left: 22px;
+} 
+[name="buscador"] {
+	grid-column: 2;
+	grid-row: 1;
+	height: 50px;
+}
+.lupa{
+	grid-column: 2;
+    grid-row: 1;
+    height: 33px;
+    width: 25px;
+    padding: 13px;
+    justify-self: end;
+}
+.carrito{
+	justify-self: right;
+	grid-column: 3;
+	grid-row: 1;
+	width: 83px;
+	padding: 5px;
+}
+.numeroCompra{
+	grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+    padding-left: 244px;
+    font-size: 27px;
+}
+/*BARRA DE NAVEGACION - Nav*/
+nav {
+	background-color: #39558e;
+	color: #fff;
+	text-align: center;
+	height: 55px;
+	grid-column: 1/4;
+	grid-row: 2;
+}
+
+/*SECCION - Section*/
+section {
+	height: 800px;
+	position: relative;
+	top: 160px;
+}
+
+/*PIE - Footer*/
+footer {
+	height:200px;
+	background-color: #565656;
+}
