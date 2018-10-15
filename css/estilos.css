@@ -139,6 +139,15 @@ h1, h6 {
 	-moz-box-shadow: 8px 8px 19px -16px rgba(0,0,0,0.75);
 	box-shadow: 8px 8px 19px -16px rgba(0,0,0,0.75);
 }
+.pasos {
+	max-width: 240px;
+	border: 1px solid #00b147;
+	padding: 10px;
+	text-align: center;
+	font-size: 17px;
+	margin-bottom: 15px;
+	background-color: #CCFFE0;
+}
 .producto:hover {
 	border: 2px solid #00b147;
 }
@@ -181,6 +190,11 @@ div.producto p {
 .vacio2{
 	grid-column:5/6;
 	grid-row:2/6;
+}
+.destacado {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 /*PIE - Footer*/
