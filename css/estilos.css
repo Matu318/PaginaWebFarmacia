@@ -230,3 +230,98 @@ div.redes-sociales {
 .redes-sociales a {
 	margin-right: 10px;
 }
+
+section.contacto{			/*MATUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
+
+display: grid;
+	grid-template-columns: 50% 50%;
+	    grid-template-rows: 453px;
+	grid-auto-flow: row;
+	margin-top: 147px;
+	margin-left: 50px;
+	grid-gap: 15px;
+}
+
+p.tituloContacto{
+
+	font-size: xx-large; 
+}
+
+nav.formulario{
+
+height: 800px;
+	grid-column:1;
+	grid-row:1;
+	justify-self: left;
+
+
+
+}
+#nombre{
+
+	display: list-item;
+	height: 20px;
+}
+#apellido{
+
+	display: list-item;
+	height: 20px;
+}
+#email{
+
+	display: list-item;
+	height: 20px;
+}
+
+#mensaje{
+
+	display: list-item;
+	    height: 100px;
+    width: 300px;
+}
+
+#enviar{
+
+	padding-right: 12px;
+    margin-left: 235px;
+    height: 31px;
+    background-color: #48639a87;
+    margin-top: 10px;
+}
+
+nav.datos{
+
+	justify-self: left;
+}
+p.tituloDatos{
+
+
+	grid-column: 2;
+	grid-row: 1;
+	font-size: xx-large; 
+
+}
+
+ul.listaDatos{
+
+	grid-column: 2;
+	grid-row:1;
+	    line-height: 2;
+    font-size: larger;
+}
+p.tituloMapa{
+	    padding-left: 180px;
+    width: 76px;
+    padding-right: 180px;
+	font-size: xx-large;
+
+}
+nav.mapaGoogle{
+
+	grid-column:1/3;
+	gird-row:2;
+}
+iframe{
+
+	grid-column:1/3;
+}
