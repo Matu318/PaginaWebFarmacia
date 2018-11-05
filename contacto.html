@@ -4,9 +4,13 @@
     <meta charset="utf-8">
 	<title>Farmacia ALMA SANA</title>
 	<link rel="stylesheet" href="css/estilos.css" >
+    <link rel="stylesheet" href="css/queries.css" >
+    <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0"
 </head>
 
 <body>
+<noscript>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.<br>
+Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</noscript>
 <header>
     <img class="logo" src="img/logo.png" alt="Farmacia Alma Sana">
 	<input type="search" name="buscador" ><a href="#" class="lupa"><img src="img/lupa.png"></a>
@@ -18,39 +22,35 @@
 </header>
 
 <section class="contacto">
-<div class="formulario">
-<p class="tituloContacto"> Contacto </p>
+<form action="" method="" id="formulario-contacto">
+<h2>Contacto</h2>
 
-<label for="apellidos">Apellido</label>
-       <input type="text" name="apellido" id="apellido" />
-
-       <label for="nombre">Nombre</label>
-       <input type="text" name="nombre" id="nombre" />
- 
-       <label for="email">Email</label>
-       <input type="email" name="email" id="email" />
-
-       <label for="mejora">Mensaje</label><br />
-       <textarea name="mensaje" id="mensaje"></textarea>
+       <input type="text" name="apellido" id="apellido" placeholder="Ingrese el/los nombre/s de forma completa" required/>
+       <input type="text" name="nombre" id="nombre" placeholder="Ingrese el/los apellido/s de forma completa" required/>
+       <input type="email" name="email" id="email" placeholder="Ingrese el Email, repetado la estructura aaaaa@bbbbbbb.ccc" required/>
+       <textarea name="mensaje" id="mensaje" placeholder="Ingrese un comentario"></textarea>
 
        <input type="submit" value="Enviar" id="enviar" />
 
-</div>
+</form>
 
 <div class="datos">
-  <p class="tituloDatos"> Datos de contacto</p>
-  <ul class="listaDatos"> 
-    <li> Mail: almasana@gmail.com </li>
-    <li> Tel: 4444-8888</li>
-    <li> Direccion: Florencio Varela 1903</li>
-    <li> IG: AlmaSana</li>
-    <li> FB: AlmaSanaOk</li>
+  <h2> Datos de contacto</h2>
+  <ul class="listaDatos">
+    <li>Direccion: Florencio Varela 1903 - B1754 - San Justo<br>
+    Partido de la Matanza - Pcia de Buenos Aires</li> 
+    
+    <li>Mail: almasana@gmail.com</li>
+    <li>Tel: 4444-8888</li>
+    
+    <li>IG: AlmaSana</li>
+    <li>FB: AlmaSanaOk</li>
 </ul>
 
 </div>
 
 <div class="mapaGoogle">
-  <p class="tituloMapa">Mapa</p>
+  <h2 class="tituloMapa">Ubicación</h2>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3988756722742!2d-58.564793985050066!3d-34.66988116850833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3e02599%3A0x5f178c9d980d3f8b!2sFlorencio+Varela+1903%2C+B1754JEC+San+Justo%2C+Pcia+de+Buenos+Aires!5e0!3m2!1ses!2sar!4v1539726688160" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
