@@ -41,10 +41,10 @@ header {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	background-color: #fff;
-	z-index: 9999;
+	z-index: 20;
 	margin-top:-147px;
 }
-.logo {
+.isologo {
 	grid-column: 1;
 	grid-row: 1;
     padding-left: 60px;
@@ -149,7 +149,7 @@ td.estado {
 td.prec_unit {
     width: 90px;
 }
-td.cantidad {
+td.cantidad-compra {
     width: 70px;
 }
 td.total {
@@ -164,7 +164,7 @@ td {
 	height:37px;
 	text-align: center;
 }
-td.descripcion, td.estado, td.prec_unit, td.cantidad, td.total {
+td.descripcion, td.estado, td.prec_unit, td.cantidad-compra, td.total {
 	color: #fff;
     text-align: center;
     border-bottom: 3px solid #39558e;
@@ -179,8 +179,9 @@ td.descripcion, td.estado, td.prec_unit, td.cantidad, td.total {
 	padding-top:60px;
 	margin-bottom:60px;
 }
-.detalle-compra input.cantidad{
-	border:none;
+.detalle-compra input.cantidad1, .detalle-compra input.cantidad2, .detalle-compra input.cantidad3 {
+	border: none;
+	padding: inherit;
 }
 .slider {
 	grid-column: 1 / 6;
@@ -212,7 +213,7 @@ h1, h6 {
 	-moz-box-shadow: 8px 8px 19px -16px rgba(0,0,0,0.75);
 	box-shadow: 8px 8px 19px -16px rgba(0,0,0,0.75);
 }
-.otProducto {
+.otroprod {
 	margin-bottom: 40px;
 }
 .pasos {
@@ -245,6 +246,7 @@ div.producto p {
 	text-decoration: none;
 	color: #fff;
 	font-size: 13px;
+	cursor: pointer;
 }
 .detalle{
     text-align: center;
@@ -260,7 +262,10 @@ div.producto p {
 	vertical-align: middle;
 	margin-right: 7px;
 }
-.producto > img {
+.remedio {
+	width: 75%;
+}
+.producto a > img .remedio {
 	width: 75%;
 	margin-right: auto;
 	margin-left: auto;
@@ -448,4 +453,66 @@ input.cantidad{
     padding-left: 10px;
     height: 30px;
     width: 45px;
+}
+.cantidad {
+    position: absolute;
+    right: 31px;
+    top: 27px;
+    background-color: #00b147;
+    color: white;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    font-size: 10pt;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#slider1_container {
+		grid-column: 2 / 5;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	height: 130px;
+	background-color: #FFF;
+}
+.logo {
+	width: 960px;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: move;
+	height: 90px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+div.ui-helper-hidden-accessible div {
+	display:none;
+}
+
+
+/********************************************************************/
+.cantidad1, .cantidad2, .cantidad3, .cantidad4 {
+	text-align: center;
+	width: 80%;
+}
+
+
+#ui-id-1 {
+	background-color: #FFF;
+	z-index: 30;
+	position: fixed;
+	border: 1px solid #ccc;
+	list-style: none;
+	padding-left: 15px;
 }

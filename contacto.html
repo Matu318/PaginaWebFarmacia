@@ -5,15 +5,16 @@
 	<title>Farmacia ALMA SANA</title>
 	<link rel="stylesheet" href="css/estilos.css" >
     <link rel="stylesheet" href="css/queries.css" >
-    <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0"
+    <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0">
 </head>
 
 <body>
 <noscript>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.<br>
 Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</noscript>
 <header>
-    <img class="logo" src="img/logo.png" alt="Farmacia Alma Sana">
-	<input type="search" name="buscador" ><a href="#" class="lupa"><img src="img/lupa.png"></a>
+    <img class="isologo" src="img/logo.png" alt="Farmacia Alma Sana">
+	<input type="search" name="buscador" id="tags">
+    <a href="#" class="lupa"><img src="img/lupa.png"></a>
 	<a href="resumen.html" class ="carrito"><img src="img/carrito-compra.png"></a><span class="numeroCompra">0</span>
 	<nav>
     <a href="index.html">Inicio</a>
@@ -25,8 +26,9 @@ Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</noscri
 <form action="" method="" id="formulario-contacto">
 <h2>Contacto</h2>
 
-       <input type="text" name="apellido" id="apellido" placeholder="Ingrese el/los nombre/s de forma completa" required/>
-       <input type="text" name="nombre" id="nombre" placeholder="Ingrese el/los apellido/s de forma completa" required/>
+       <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre/s y apellidos completos" required/>
+       <input type="text" name="documento" id="documento" placeholder="Ingrese el DNI" required/>
+       <input type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese el/los apellido/s de forma completa" required/>
        <input type="email" name="email" id="email" placeholder="Ingrese el Email, repetado la estructura aaaaa@bbbbbbb.ccc" required/>
        <textarea name="mensaje" id="mensaje" placeholder="Ingrese un comentario"></textarea>
 

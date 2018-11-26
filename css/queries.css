@@ -101,4 +101,15 @@ form.personalizacion {
 h1.productos {
     grid-column: 1;
 }
+.logo {
+	padding-left: 10px;
+	width: 55px;
+	padding-top: 25px;
+}
+input {
+    width: 100%;
+}
+.carrito {
+	margin-top: 27px;
+}
 }
