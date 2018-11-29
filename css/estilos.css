@@ -500,6 +500,14 @@ div.ui-helper-hidden-accessible div {
 	display:none;
 }
 
+.menError{
+	display:none;
+	background: #ff4b4b;
+	    margin-bottom: 17px;
+		width: calc(100% - 13px);
+		margin-top:-15px;
+		padding-left: 13px;
+}
 
 /********************************************************************/
 .cantidad1, .cantidad2, .cantidad3, .cantidad4 {

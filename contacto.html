@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="css/estilos.css" >
     <link rel="stylesheet" href="css/queries.css" >
     <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+	<!--<script type="text/javascript" src="js/validacionFormulario.js"></script>-->
+	
+	<script type="text/javascript" src="js/jquery/validacionFormularioJQuery.js"></script>
+	
+
+	
 </head>
 
 <body>
@@ -23,15 +30,27 @@ Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</noscri
 </header>
 
 <section class="contacto">
-<form action="" method="" id="formulario-contacto">
+<form id="formulario-contacto" onsubmit="return validar()">
 <h2>Contacto</h2>
 
-       <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre/s y apellidos completos" required/>
-       <input type="text" name="documento" id="documento" placeholder="Ingrese el DNI" required/>
-       <input type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese el/los apellido/s de forma completa" required/>
-       <input type="email" name="email" id="email" placeholder="Ingrese el Email, repetado la estructura aaaaa@bbbbbbb.ccc" required/>
+       <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre/s y apellidos completos"/>
+	   <div class="menError" id="menError1">Debe ingresar 10 caracteres como mínimo y 20 como maximo</div>
+					</div>
+       <input type="text" name="documento" id="documento" placeholder="Ingrese el DNI" />
+	   <div class="menError" id="menError2">Tiene que ingresar 8 numeros</div>
+					</div>
+       <input type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese la fecha de nacimiento" />
+	   <div class="menError" id="menError3">Debe completar el campo</div>
+					</div>
+       <input type="text" name="email" id="email" placeholder="Ingrese el Email, repetado la estructura aaaaa@bbbbbbb.ccc" />
+	   <div class="menError" id="menError4">Ingrese el email con su formato correspondiente</div>
+					</div>
        <textarea name="mensaje" id="mensaje" placeholder="Ingrese un comentario"></textarea>
-
+	   <div class="menError" id="menError5">Complete el campo</div>
+					</div>
+	  
+	   
+	   
        <input type="submit" value="Enviar" id="enviar" />
 
 </form>
